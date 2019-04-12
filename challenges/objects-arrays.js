@@ -35,14 +35,11 @@ console.log(dino[1].length);
 console.log(dino[0].period);
 
 
-// Create a new roar method for the tyrannosaurus.  When called, return "RAWERSRARARWERSARARARRRR!" Log the result.
-// dino.prototype.roar = function (name){
+//Create a new roar method for the tyrannosaurus.  When called, return "RAWERSRARARWERSARARARRRR!" Log the result.
+// dino.roar = function (name){
 //   return `${name} RAWERSRARARWERSARARARRRR!`;
 // }
-// console.log(roar(tyrannosaurus) );
-
-
-
+// console.log("tyrannosaurus");
 // ////////////////////////////////////////////////DO
 
 
@@ -86,11 +83,31 @@ console.log(contactInfo);
 
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called uni that contains them all. Log the result. */
-const uni = graduates.filter(function(sec)
-{return sec.university === "Uni"});
+let uni = [];
+var fruits = ['apple', 'banana', 'grapes', 'mango', 'orange'];
+
+/**
+ * Filter array items based on search criteria (query)
+ */
+// graduates.filter(function(el) {
+//       return uni.push(el.university.indexOf() === "Uni");
+//   })
+
+
+function filterItems(arr) {
+    return arr.filter(function(el) {
+        return uni.push(el.university.indexOf("Uni")>-1);
+  })}
+console.log(filterItems(graduates));
+
 console.log(uni);
 
 /////////////////////////////////////do
+
+
+
+
+
 
 // ==== ADVANCED Array Methods ====
 
