@@ -19,9 +19,6 @@ console.log(cuboid.surfaceArea()); // 130
 class CubeMaker extends CuboidMaker {
     constructor(props) {
       super(props);
-      this.specialty = props.specialty;
-      this.favLanguage = props.favLanguage;
-      this.catchPhrase = props.catchPhrase;
     }
   
     volume(a) {
