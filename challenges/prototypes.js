@@ -6,10 +6,10 @@
   Create a constructor function named CuboidMaker that accepts properties for length, width, and height
 */
 
-function CuboidMaker(properties){
-  this.length = properties.length;
-  this.width = properties.width;
-  this.height = properties.height;
+function CuboidMaker(props){
+  this.length = props.length;
+  this.width = props.width;
+  this.height = props.height;
 }
 
 
@@ -20,7 +20,7 @@ function CuboidMaker(properties){
 */
 
 CuboidMaker.prototype.volume = function(){
-  console.log(`${this.length} * ${this.width} * ${this.height}`);
+  console.log(this.length * this.width * this.height);
 };
 
 /* == Step 3: Surface Area Method ==
@@ -30,7 +30,7 @@ CuboidMaker.prototype.volume = function(){
 */
 
 CuboidMaker.prototype.surfaceArea = function(){
-  console.log(2 * (length * width + length * height + width * height));
+  console.log(2 * (this.length * this.width + this.length * this.height + this.width * this.height));
 };
 
 /* == Step 4: Create a new object that uses CuboidMaker ==
