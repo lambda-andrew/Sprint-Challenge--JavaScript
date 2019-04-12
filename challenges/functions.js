@@ -7,10 +7,9 @@
   * In the body of the function return the callback with the two parameters that you created
 */
 
-const consume = function(attribute1,attribute2,cb){
-  return (cb(attribute1, attribute2));
-};
-
+function consume (arg1, arg2, cb) {
+  return cb(arg1,arg2);
+}
 
 /* Step 2: Create several functions to callback with consume();
   * Create a function named add that returns the sum of two numbers
@@ -18,18 +17,17 @@ const consume = function(attribute1,attribute2,cb){
   * Create a function named greeting that accepts a first and last name and returns "Hello first-name last-name, nice to meet you!"
 */
 
+function add(x, y, cb) {
+  return x + y;
+}
 
-function add (num1,num2){
-  return (num1 + num2);
-};
+function multiply(x, y, cb) {
+  return x * y;
+}
 
-function multiply (num1,num2){
-  return (num1 * num2);
-};
-
-function greeting (firstName,lastName){
+function greeting (firstName, lastName) {
   return `Hello ${firstName} ${lastName}, nice to meet you!`;
-};
+}
 
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
 consume(2,2,add); // 4
@@ -41,8 +39,10 @@ consume("Mary","Poppins", greeting); // Hello Mary Poppins, nice to meet you!
 
 // Explain in your own words why `nestedfunction()` can access the variable `internal`.
 
-// Explanation: 
-// `nestedfunction()` and `internal` both live in the same city, within the same country(myFunction), within the same world(window)! 
+// Explanation: The `nestedfunction()` can access the variable `internal` because in addition to having 
+//                its own workspace, it also has access to all functions in which it is nested.
+//                  Additionally the console log is referencing and bringing the internal variable into local scope.
+
 
 const external = "I'm outside the function";
 
