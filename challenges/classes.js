@@ -35,3 +35,4 @@
 
   // Getting Uncaught SyntaxError: Identifier 'CuboidMaker' has already been declared at classes.js:1
   //I am unsure of how to get rid of this error, since CuboidMaker hasn't been declared in this file but once.
+  //The logs at bottom of the page work on protoypes.js
