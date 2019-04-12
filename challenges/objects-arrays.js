@@ -266,7 +266,35 @@ console.log(populationTotal);
 
 
 /*
-
 Stretch: If you haven't already, convert your array method callbacks into arrow functions.
-
 */
+
+
+// Request One
+// const animalNames = [];
+// zooAnimals.forEach(myArr => {
+//   animalNames.push(`Name: ${myArr.animal_name}, Scientific: ${myArr.scientific_name}`);
+// });
+// console.log(animalNames);
+
+
+
+// Request Two
+// const lowerCase = zooAnimals.map(myArr => {
+//   return myArr.animal_name.toLowerCase();
+// });
+// console.log(lowerCase);
+
+
+
+// Request Three
+// const largerPopulation = zooAnimals.filter(myArr => myArr.population < 5);
+// console.log(largerPopulation);
+
+
+
+// Request Four
+// const populationTotal = (totalPopulation, myArr) => {
+//   return totalPopulation + myArr.population;
+// };
+// console.log(zooAnimals.reduce(populationTotal, 0));
