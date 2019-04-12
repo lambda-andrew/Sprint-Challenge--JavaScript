@@ -36,11 +36,11 @@ console.log(dino[0].period);
 
 
 // Create a new roar method for the tyrannosaurus.  When called, return "RAWERSRARARWERSARARARRRR!" Log the result.
-dino.prototype. = function (name){
-  return `${name} RAWERSRARARWERSARARARRRR!`;
-}
-console.log(roar(tyrannosaurus) );
-
+// dino.prototype.roar = function (name){
+//   return `${name} RAWERSRARARWERSARARARRRR!`;
+// }
+// console.log(roar(tyrannosaurus) );
+// ////////////////////////////////////////////////DO
 
 // ==== Arrays ====
 
