@@ -8,7 +8,7 @@
 
 // tyrannosaurus, carnivorous, 7000kg, 12m, Late Cretaceious
 
-const trex = {
+const tRex = {
   name: 'tyrannosaurus',
   diet: 'carnivorous',
   weight: 7000,
@@ -39,7 +39,7 @@ const vRaptor = {
 // Using your dinosaur objects, log answers to these questions:
 
 // How much did tyrannosaurus weigh?
-console.log(trex.weight);
+console.log(tRex.weight);
 
 // What was the diet of a velociraptor?
 console.log(vRaptor.diet);
@@ -48,11 +48,16 @@ console.log(vRaptor.diet);
 console.log(stegosaurus.length);
 
 // What time period did tyrannosaurus live in?
-console.log(trex.period);
+console.log(tRex.period);
 
 
 // Create a new roar method for the tyrannosaurus.  When called, return "RAWERSRARARWERSARARARRRR!" Log the result.
-console.log();
+
+tRex.roar = function(){
+  console.log('RAWERSRARARWERSARARARRRR!');
+}
+
+console.log(tRex.roar());
 
 
 // ==== Arrays ====
