@@ -20,7 +20,7 @@ function CuboidMaker(properties){
 */
 
 CuboidMaker.prototype.volume = function(){
-  console.log(length * width * height);
+  console.log(`${this.length} * ${this.width} * ${this.height}`);
 }
 
 /* == Step 3: Surface Area Method ==
