@@ -102,7 +102,10 @@ const uni = [];
 
 for (let i = 0; i < graduates.length; i++) {
   if (graduates[i].university.includes('uni')){
-    uni.push(graduates[i].university);
+    uni.push(graduates[i]);
+  }
+
+  else {
   };
 };
 
