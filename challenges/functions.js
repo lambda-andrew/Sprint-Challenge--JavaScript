@@ -8,7 +8,7 @@
 */
 
 const consume = function(attribute1,attribute2,cb){
-  return attribute1, attribute2;
+  return (cb(attribute1, attribute2));
 };
 
 
@@ -42,7 +42,7 @@ consume("Mary","Poppins", greeting); // Hello Mary Poppins, nice to meet you!
 // Explain in your own words why `nestedfunction()` can access the variable `internal`.
 
 // Explanation: 
-
+// `nestedfunction()` and `internal` both live in the same city, within the same country(myFunction), within the same world(window)! 
 
 const external = "I'm outside the function";
 
