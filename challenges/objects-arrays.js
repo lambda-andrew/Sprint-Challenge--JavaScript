@@ -99,18 +99,15 @@ console.log(contactInfo);
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called uni that contains them all. Log the result. */
 const uni = [];
-
 for (let i = 0; i < graduates.length; i++) {
-  if (graduates[i].university.includes('uni')){
+  if (graduates[i].university.includes("uni")) {
     uni.push(graduates[i]);
-  }
+  } else {
 
-  else {
   };
 };
 
 console.log(uni);
-
 
 // ==== ADVANCED Array Methods ====
 
@@ -136,7 +133,7 @@ scientific names in it.  The individual values in the array should look like thi
 */
 const animalNames = [];
 
-let individualNames = zooAnimals.forEach((i)=>{
+let individualNames = zooAnimals.forEach(i =>{
   animalNames.push(`Name: ${i.animal_name}, Scientific: ${i.scientific_name}`);
 });
 
@@ -148,11 +145,15 @@ The zoos need a list of all their animal's names (names only, not scientific) co
 
 */
 
-const lowerCase = [];
-
-let lowName = zooAnimals.map((i)=>{
-  animalNames.push(`${i.animal_name.toLowerCase()}`);
+const lowerCase = zooAnimals.map(i => {
+  return i.animal_name.toLowerCase();
 });
+
+// const lowerCase = [];
+
+// let lowName = zooAnimals.map((i)=>{
+//   animalNames.push(`${i.animal_name.toLowerCase()}`);
+// });
 
 console.log(lowerCase); 
 
@@ -161,19 +162,25 @@ console.log(lowerCase);
 The zoos are concenred about animals with a lower population count. Find out which animals have a population less than 5.
 
 */
-const largerPopulation = [];
 
-let lowPop = zooAnimals.filter((i)=>{
-  if (i.population < 5) {
-    animalNames.push(animalNames);
-  };
+const largerPopulation = zooAnimals.filter((i)=>{
+  return i.population < 5;
 });
+
+// const largerPopulation = [];
+
+// let lowPop = zooAnimals.filter((i)=>{
+//   if (i.population < 5) {
+//     animalNames.push(i.animalNames);
+//   };
+// });
 console.log(largerPopulation);
 
 
 /* Request 4: .reduce() 
 
-The zoos need to know their total animal population across the United States.  Find the total population from all the zoos using the .reduce() method.
+The zoos need to know their total animal population across the United States. Find the total 
+population from all the zoos using the .reduce() method.
 
 */
 
