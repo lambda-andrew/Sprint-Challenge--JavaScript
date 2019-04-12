@@ -1,10 +1,10 @@
 // 1. Copy and paste your prototype in here and refactor into class syntax.
 
 class CuboidMaker {
-    constructor(promps){
-        this.length = promps.length,
-        this.width = promps.width,
-        this.height = promps.height
+    constructor(props){
+        this.length = props.length,
+        this.width = props.width,
+        this.height = props.height
     };
   };
   
@@ -21,11 +21,11 @@ class CubeMaker extends CuboidMaker {
       super(props);
     }
   
-    volume(a) {
-      return a * a * a;
+    volume() {
+      return this.width * this.width * this.width;
     };
 
-    surfaceArea(a) {
-        return 6 (a * a);
+    surfaceArea() {
+        return 6 (this.width * this.height);
       };
 };
