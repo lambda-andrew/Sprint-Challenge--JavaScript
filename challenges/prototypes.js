@@ -26,19 +26,19 @@
   Add properties and values of length: 4, width: 5, and height: 5 to cuboid.
 */
 
-class CuboidMaker{
-  constructor(cubAtt){
+  function CuboidMaker(cubAtt) {
     this.length = cubAtt.length;
     this.height = cubAtt.height;
     this.width = cubAtt.width;
-  }
-    volume = function(){
+}
+    CuboidMaker.prototype.volume = function(){
       return this.length * this.height * this.width;
     }
-    surfaceArea = function(){
+
+    CuboidMaker.prototype.surfaceArea = function(){
       return 2 * (this.length * this.width + this.length * this.height + this.width * this.height);
     }
-}
+
 
 const cuboid = new CuboidMaker({
   length: 4,
