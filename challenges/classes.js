@@ -13,10 +13,10 @@
 // }
 
 class CuboidMaker {
-  constructor(cubProps) {
-    this.length = cubProps.length;
-    this.width = cubProps.width;
-    this.height = cubProps.height;
+  constructor(cuboidProps) {
+    this.length = cuboidProps.length;
+    this.width = cuboidProps.width;
+    this.height = cuboidProps.height;
   }
   volume() {
     return this.length * this.width * this.height;
