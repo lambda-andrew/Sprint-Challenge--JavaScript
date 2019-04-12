@@ -30,13 +30,67 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+.forEach uses function on array, mutates array
+.map uses function on array, but creates new array
+
+
 2. What is the difference between a function and a method?
+
+method is a function on an object
 
 3. What is closure?
 
+a closure is where an inner function has acces to the outer functions variables
+
 4. Describe the four rules of the 'this' keyword.
 
+* 1. Window Binding
+<!-- Default binding refers to how this is the global context whenever a function is invoked without any of these other rules. If we aren't using a dot and we aren't using call(), apply(), or bind(), our this will be our global object.
+
+Your global context depends on where you're working. If you're in the browser, this will be the window. When programming in strict mode, the global context is undefined. -->
+
+* 2. Implicit Binding
+
+<!-- Whatever to the left of the '.' is what 'this' is referring to -->
+
+
+
+* 3. New Binding
+
+<!-- use new to invoke constructor function. new keyword in front of constructor function will create new object.  -->
+
+
+* 4. Explicit Binding
+
+<!-- call apply bind
+
+The first parameter in call() method sets the "this" value, which is the object, on which the function is invoked upon. In this case, it's the "obj" object above.
+The rest of the parameters are the arguments to the actual function.
+
+
+Similarly to call() method the first parameter in apply() method sets the "this" value 
+which is the object upon which the function is invoked. In this case it's the "obj" object
+above. The only difference of apply() with the call() method is that the second parameter
+of the apply() method accepts the arguments to the actual function as an array.
+
+
+
+The first parameter to the bind() method sets the value of "this" in the 
+target function when the bound function is called. Please note that the 
+value for first parameter is ignored if the bound function is constructed
+using the "new" operator.
+The rest of the parameters following the first parameter in bind() 
+method are passed as arguments which are prepended to the arguments
+ provided to the bound function when invoking the target function.
+ -->
+
+
+
+
+
 5. Why do we need super() in an extended class?
+
+<!-- super is the special sauce. Required with extended class. Super obstracts away funky syntaxt we needed with prototype.  -->
 
 ## Project Set up
 
@@ -84,3 +138,9 @@ In your solutions, it is essential that you follow best practices and produce cl
 ## Stretch Problems
 
 There are a few stretch problems found throughout the files, don't work on them until you are finished with MVP requirements!
+
+
+
+
+
+
