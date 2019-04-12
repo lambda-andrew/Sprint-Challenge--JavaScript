@@ -11,13 +11,10 @@
             this.height = props.height;
         }
         volume() {
-            console.log(this
-                .length * this.width * this.height);
+            console.log(this.length * this.width * this.height);
         }
         surfaceArea() {
-            console.log(t * (this.length *
-                this.width + this.length * this.height + this.width
-                * this.height));
+            console.log(2 * (this.length * this.width + this.length * this.height + this.width * this.height));
         }
     };
   
