@@ -6,11 +6,11 @@
   Create a constructor function named CuboidMaker that accepts properties for length, width, and height
 */
 
-// function CuboidMaker(props){
-//   this.length = props.length,
-//   this.width = props.width,
-//   this.height = props.height
-// };
+function CuboidMaker(props){
+  this.length = props.length,
+  this.width = props.width,
+  this.height = props.height
+};
 
 /* == Step 2: Volume Method ==
   Create a method using CuboidMaker's prototype that returns the volume of a given cuboid's length, width, and height
