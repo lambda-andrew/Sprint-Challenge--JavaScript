@@ -29,22 +29,14 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. Describe the biggest difference between `.forEach` & `.map`.
-To me, the biggest difference is that. ".map" is used to make a new array and "for each" is used to go through each array item.
 
 2. What is the difference between a function and a method?
-Methods are mostly used in objects and functions are used in more than just objects.
 
 3. What is closure?
 
-
 4. Describe the four rules of the 'this' keyword.
-1.Window binding - Binds this to the window you are using this in.
-2.implicite binding - this has vaules to the left.
-3.explicite binding - Has a exclisive thing that it connects to.
-4.new binding - is used in thing thing like contructors. or when you use the new key word.
 
 5. Why do we need super() in an extended class?
-Super calls the previous Attributes from past Classes.
 
 ## Project Set up
 
