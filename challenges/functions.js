@@ -7,10 +7,6 @@
   * In the body of the function return the callback with the two parameters that you created
 */
 
-const consume = function(attribute1,attribute2,cb){
-  return (cb(attribute1, attribute2));
-};
-
 
 /* Step 2: Create several functions to callback with consume();
   * Create a function named add that returns the sum of two numbers
@@ -19,22 +15,10 @@ const consume = function(attribute1,attribute2,cb){
 */
 
 
-function add (num1,num2){
-  return (num1 + num2);
-};
-
-function multiply (num1,num2){
-  return (num1 * num2);
-};
-
-function greeting (firstName,lastName){
-  return `Hello ${firstName} ${lastName}, nice to meet you!`;
-};
-
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
-consume(2,2,add); // 4
-consume(10,16,multiply); // 160
-consume("Mary","Poppins", greeting); // Hello Mary Poppins, nice to meet you!
+// consume(2,2,add); // 4
+// consume(10,16,multiply); // 160
+// consume("Mary","Poppins", greeting); // Hello Mary Poppins, nice to meet you!
 
 
 // ==== Closures ==== 
@@ -42,7 +26,7 @@ consume("Mary","Poppins", greeting); // Hello Mary Poppins, nice to meet you!
 // Explain in your own words why `nestedfunction()` can access the variable `internal`.
 
 // Explanation: 
-// `nestedfunction()` and `internal` both live in the same city, within the same country(myFunction), within the same world(window)! 
+
 
 const external = "I'm outside the function";
 
