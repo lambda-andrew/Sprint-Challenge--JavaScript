@@ -39,7 +39,7 @@ let tyrannosaurus = {
     }
 
 // Using your dinosaur objects, log answers to these questions:
-/*
+
 // How much did tyrannosaurus weigh?
 console.log(tyrannosaurus.weight);
 
@@ -55,7 +55,7 @@ console.log(tyrannosaurus.period);
 
 // Create a new roar method for the tyrannosaurus.  When called, return "RAWERSRARARWERSARARARRRR!" Log the result.
 console.log(tyrannosaurus.speak());
-*/
+
 
 // ==== Arrays ====
 
@@ -74,11 +74,11 @@ const graduates = [{"id":1,"first_name":"Cynde","university":"Missouri Southern 
 
 // Request 1: Create a new array called universities that contains all the universities in the graduates array.  
 
-// const universities = [];
-// for (let i = 0; i < graduates.length; i++) {
-//   universities.push(graduates[i].university);
-// }
-// console.log(universities);
+const universities = [];
+for (let i = 0; i < graduates.length; i++) {
+  universities.push(graduates[i].university);
+}
+console.log(universities);
  
 // Once you have the new array created, sort the universities alphabetically and log the result. 
 
