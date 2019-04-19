@@ -7,7 +7,7 @@
   * In the body of the function return the callback with the two parameters that you created
 */
 
-function callbackFunc(arg1, arg2, callback) {
+function callbackFunction(arg1, arg2, callback) {
   return callback[arg1, arg2];
 }
 
